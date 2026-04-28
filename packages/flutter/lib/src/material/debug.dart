@@ -37,7 +37,7 @@ bool debugCheckHasMaterial(BuildContext context) {
       final bool hiddenByBoundary = LookupBoundary.debugIsHidingAncestorWidgetOfExactType<Material>(
         context,
       );
-      throw FlutterError.fromParts(<DiagnosticsNode>[
+       throw FlutterError.fromParts(<DiagnosticsNode>[
         ErrorSummary(
           'No Material widget found${hiddenByBoundary ? ' within the closest LookupBoundary' : ''}.',
         ),
